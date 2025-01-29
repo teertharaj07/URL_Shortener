@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "this is URL Shortener project",
   "main": "app.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "dev":"node --watch app.js",
-    "start":"node app.js"
+    "dev": "node --watch app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "teertharaj turkar",

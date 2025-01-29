@@ -6,7 +6,7 @@ import { writeFile } from "fs/promises";
 import { json } from "stream/consumers";
 import { link } from "fs/promises";
 
-const PORT = 3002;
+const PORT = process.env.PORT || 3000;
 
 const DATA_FILE = path.join("data", "links.json");
 
@@ -98,3 +98,5 @@ const server = createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
